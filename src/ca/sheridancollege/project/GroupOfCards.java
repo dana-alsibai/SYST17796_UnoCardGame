@@ -17,12 +17,12 @@ package ca.sheridancollege.project;
 public class GroupOfCards { //The group of cards, stored in an ArrayList enum type
 
     private Card[] cards;
-    private final int MAX_NUM_OF_CARDS =108;
+    private final int MAX_NUM_OF_CARDS =15;
 
     
 
      public GroupOfCards() {
-        deck();
+        init();
     }
 
     public Card[] getCards() {
@@ -33,7 +33,7 @@ public class GroupOfCards { //The group of cards, stored in an ArrayList enum ty
         this.cards = cards;
     }
   
-     public void deck() {
+     public  void init() {
         cards = new Card[MAX_NUM_OF_CARDS];
         //an index is used to assing the value for each element of the array
         int index = 0;
